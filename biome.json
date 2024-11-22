@@ -1,0 +1,62 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"assists": {
+		"actions": {
+			"source": {
+				"sortJsxProps": "on"
+			}
+		}
+	},
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": false
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"include": ["./src/*"],
+		"ignore": ["./node_modules", "./public", "./cypress"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 80,
+		"attributePosition": "multiline",
+		"bracketSpacing": true,
+		"indentWidth": 2
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"nursery": {
+				"useSortedClasses": "warn"
+			},
+			"security": {
+				"noGlobalEval": "error"
+			},
+			"style": {
+				"noUselessElse": "info",
+				"useBlockStatements": "info"
+			},
+			"suspicious": {
+				"noConsoleLog": "warn"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "double",
+			"jsxQuoteStyle": "double",
+			"arrowParentheses": "asNeeded",
+			"bracketSameLine": false,
+			"semicolons": "asNeeded",
+			"attributePosition": "multiline",
+			"bracketSpacing": true,
+			"trailingCommas": "all"
+		}
+	}
+}
